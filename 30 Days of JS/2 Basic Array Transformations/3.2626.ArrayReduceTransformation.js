@@ -4,7 +4,7 @@
  * @param {number} init
  * @return {number}
  */
-var reduce = function(nums, fn, init) {
+var reduce = (nums, fn, init) => {
     nums.forEach((e) => init = fn(init, e))
     return init;
 };
